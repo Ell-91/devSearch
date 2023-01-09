@@ -5,7 +5,8 @@ import uuid
 class Project(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField(null = True, blank= True)
-    # creates a default image/every model that we don't add an image for is going to have the default pic until we modify it  
+    # creates a default image/every model that we don't add an image for is going to have the default pic until we modify it   
+    featured_image = models.ImageField(null = True, blank= True, default = "default.jpeg")
     demo_link = models.CharField(max_length= 2000, null = True, blank= True)
     source_link = models.CharField(max_length=2000, null = True, blank= True)
     tags = models.ManyToManyField('Tag', blank = True) # True means we dont need to select a tag #create a relationship to a tag (tag can be connected to multiple models)
