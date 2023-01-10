@@ -11,10 +11,10 @@ def projects(request):
     return render(request, 'projects/projects.html', context)
 
 def project(request, pk):
-    projectObj = Project.objects.get(id = pk)
-    tags = projectObj.tags.all()
-    print('projectObj', projectObj)
-    return render(request, 'projects/single-project.html', {'projectObj': projectObj, 'tags': tags})
+    project = Project.objects.get(id = pk)
+    tags = project.tags.all()
+    print('project', project)
+    return render(request, 'projects/single-project.html', {'project': project, 'tags': tags})
 
 def createProject(request):
     form = ProjectForm()
