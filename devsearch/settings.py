@@ -126,7 +126,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "devsearch.wsgi.application"
+# WSGI_APPLICATION = "devsearch.wsgi.application"
+WSGI_APPLICATION = 'devsearch.wsgi.application'
 
 
 # Database
