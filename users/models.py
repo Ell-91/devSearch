@@ -15,9 +15,9 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, blank=True)  #anytime a user is deleted, the profile is deleted 
     name = models.CharField(max_length=200, blank=True, null=True)
     email = models.EmailField(max_length=500, blank=True, null=True)
-    short_intro = models.CharField(max_length=200, blank=True, null=True)
+    short_intro = models.CharField(max_length=200, blank=True, null=True, default="This is a default bio. User has not added a bio yet.")
     username = models.CharField(max_length=200, blank=True, null=True)
-    location = models.CharField(max_length=200, blank=True, null=True)
+    location = models.CharField(max_length=200, blank=True, null=True, default="Earth")
     bio = models.TextField(blank=True, null= True)
     profile_image = models.ImageField(blank=True, null= True, upload_to='profiles/', default='profiles/user-default.png' ) #route where the profile goes 
     social_github = models.CharField(max_length=200, blank=True, null=True)

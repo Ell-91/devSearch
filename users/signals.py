@@ -30,13 +30,16 @@ def createProfile(sender, instance, created, **kwargs): #instance is the instanc
         subject = 'Welcome to DevSearch'
         message = 'We are glad you are here!'
 
-        send_mail(
-            subject,
-            message,
-            settings.EMAIL_HOST_USER,
-            [profile.email],
-            fail_silently=False,
-        )
+        try:
+            send_mail(
+                subject,
+                message,
+                settings.EMAIL_HOST_USER,
+                [profile.email],
+                fail_silently=False,
+            )
+        except:
+            print('Email failed to send...')
 
 def updateUser(sender, instance, created, **kwargs):
     profile = instance
