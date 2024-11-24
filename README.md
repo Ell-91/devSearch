@@ -65,7 +65,7 @@ DevSearch is a full-stack web platform that connects developers with open projec
 
 ## Credit
 
-Credit to Dennis Ivy course https://dennisivy.teachable.com/p/django-beginners-course
+Credit to a course by [Dennis Ivy](https://dennisivy.teachable.com/p/django-beginners-course)
   
 ## Future Improvements
 
