@@ -23,8 +23,6 @@ DevSearch is a full-stack web platform that connects developers with open projec
 ### Backend
 
     - PostgreSQL
-    - API: AWS AppSync
-    - Query Language: GraphQL
 
 
 ## Key Features
