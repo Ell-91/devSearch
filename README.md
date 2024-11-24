@@ -1,55 +1,76 @@
 # DevSearch
 
-Connect with developers from around the world to collaborate on open projects! This platform allows developers to find each other, exchange messages, showcase ongoing work, and provide feedback to help bring projects to completion together.
+## Project Overview
 
-### Tech Stack
+DevSearch is a full-stack web platform that connects developers with open projects. The platform serves as a central hub where developers can discover projects, showcase their work, provide feedback to help bring projects to completion and build meaningful connections within the development community.
 
-- Python
-- Django
-- PostgreSQL
-- HTML / CSS
+## Motivation
 
-### Website Features
+### The primary goals of this project were to:
 
-- Browse and search developers
-- Browse and search projects
-- Sign up / Login
-- Create / Edit / Delete account and project information
-- Rate and comment on other developers projects
-- Message developers and recieve inbox messages
-- User Registration & Authenticaiton
+- Practice and demonstrate full-stack web development skills using Python and Django
+- Implement user authentication and secure messaging functionality.
+- Gain hands-on experience with PostgreSQL and backend data management.
 
-### Run
+## Tech Stack 
 
-- 1 - clone repo
-- 2 - create a virtual environment and activate
-- - pip install virtualenv
-- - virtualenv envname
-- - envname\scripts\activate
-- 3 - cd into project
-- 4 - pip install -r requirements.txt
-- 5 - python manage.py runserver
+### Frontend
 
-# Login Page
+    - Django
+    - Bootstap 
+    - Python
+
+### Backend
+
+    - PostgreSQL
+    - API: AWS AppSync
+    - Query Language: GraphQL
+
+
+## Key Features
+
+- User Registration and Authenticaton 
+- User Profiles
+- Showcase Skills and Projects
+- Rate and comment on other developers' projects
+- Messaging system
+- Browse open projects and view detailed project descriptions
+- Create, edit, and delete project details
+
+## Login Page
 
 <img src="./resources/images/Login.png">
 
-# Home Page
+## Home Page
 
 <img src="./resources/images/Home.png">
 
-# Profile Page
+## Profile Page
 
 <img src="./resources/images/Profile.png">
 
-# Projects Page
+## Projects Page
 
 <img src="./resources/images/Projects.png">
 
-# User Inbox
+## User Inbox
 
 <img src="./resources/images/Inbox.png">
 
-### Credit
+## Learning Outcomes
+
+- Building a full-stack web application using Django
+- Implementing a secure user authentication system
+- Creating a functional messaging feature for real-time collaboration
+- Managing and querying data efficiently with PostgreSQL
+- Understanding and applying RESTful API principles in web development
+
+## Credit
 
 Credit to Dennis Ivy course https://dennisivy.teachable.com/p/django-beginners-course
+  
+## Future Improvements
+
+- Real-time chat functionality using WebSockets.
+- Implementing advanced search filters for developers and projects
+- Mobile-responsive design for better accessibility on all devices
